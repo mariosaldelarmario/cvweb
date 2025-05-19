@@ -1,0 +1,7 @@
+#skills .skills-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrar las columnas de habilidades */
+
+

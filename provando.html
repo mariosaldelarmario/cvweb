@@ -1,0 +1,46 @@
+
+
+<html>
+<body>
+
+<div id="app">
+<p>When you submit the form, a function is triggered which alerts some text.</p>
+
+
+
+
+<form id="abc" action="https://www.w3schools.com/action_page.php">
+    Enter name: <input type="text" name="fname">
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+<script
+src="https://code.jquery.com/jquery-2.2.4.min.js"
+integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+
+  $('form#abc').on('submit', function(event){
+      event.preventDefault();
+      var formData = $("form#abc").serializeArray();
+      console.log(formData);
+
+      $.ajax({
+        url: "https://www.w3schools.com/action_page.php",
+        type: "POST",
+        data: formData,
+        dataType: 'jsonp',
+        crossDomain: true,
+        success:function(json){
+          $('#app').html('<h1>Thank You</h1>');   
+        },
+        error:function(){
+          $('#app').html('<h1>Thank You</h1>');   
+        }  
+      });
+  });     
+</script>  
+</body>
+</html>

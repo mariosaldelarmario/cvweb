@@ -1,0 +1,187 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 2px;
+
+  
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente en pantallas grandes */
+    min-height: 100vh; /* Asegurar que ocupe toda la altura */
+    background-image: url(/imagenes/flecha.jpg);
+    background-size: 2290px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 520px;
+    background-color: #dbc430;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Ocupar un porcentaje del ancho */
+    max-width: 800px; /* Ancho máximo */
+    margin: 20px; /* Margen alrededor del contenedor */
+}
+
+
+header {
+    text-align: center; /* Centrar el contenido del header */
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+    border-top: 2px solid #eee;
+    color: #007bff; /* Color azul primario */
+}
+
+.profile h1 {
+    margin-bottom: 5px;
+    font-size: 2em;
+}
+
+.job-title {
+    color: #6c757d; /* Color gris secundario */
+    font-size: 1.1em;
+}
+
+.contact-info {
+    margin-top: 10px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    font-size: 0.95em;
+}
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    font-size: 1.6em;
+    color: #28a745; /* Color verde éxito */
+    margin-bottom: 15px;
+    border-bottom: 3px solid #d4edda; /* Borde verde claro */
+    border-top: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+#summary p {
+    line-height: 1.7;
+    color: #555;
+}
+
+
+#experience .experience-item {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+#experience .experience-item:last-child {
+    border-bottom: none;
+}
+
+#experience h3 {
+    font-size: 1.3em;
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+#experience .company-info {
+    color: #6c757d;
+    margin-bottom: 10px;
+    font-size: 0.95em;
+}
+
+#experience ul {
+    list-style: disc;
+    margin-left: 20px;
+    color: #555;
+}
+
+#education .education-item {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+#education .education-item:last-child {
+    border-bottom: none;
+}
+
+#education h3 {
+    font-size: 1.2em;
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+#education .institution-info {
+    color: #6c757d;
+    font-size: 0.95em;
+    margin-bottom: 10%;
+
+}
+
+footer {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 2px solid #eee;
+    color: #6c757d;
+    font-size: 0.9em;
+}
+
+.social-links a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        margin: 10px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info {
+        margin-top: 15px;
+    }
+
+    #skills .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #skills .skill-column {
+        width: 80%;
+        margin-bottom: 15px;
+    }
+
+      
+      
+      
+
+      
+      
+
+}
