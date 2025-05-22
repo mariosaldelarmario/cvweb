@@ -4,4 +4,4 @@
     flex-wrap: wrap;
     justify-content: center; /* Centrar las columnas de habilidades */
 
-
+}

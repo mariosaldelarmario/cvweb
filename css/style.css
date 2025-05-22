@@ -10,12 +10,12 @@ body {
     justify-content: center; /* Centrar horizontalmente */
     align-items: center; /* Centrar verticalmente en pantallas grandes */
     min-height: 100vh; /* Asegurar que ocupe toda la altura */
-    background-image: url(/imagenes/flecha.png);
+    background-image: url('./imagenes/flecha.png'); 
 
     background-size: 1400px;
     background-repeat: no-repeat;
     background-position: left;
-    background-position-x: 23px;
+    background-position-x: 34px;
     background-color: #dbc430;
 }
 
